@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            height: 100vh;
+            color: aliceblue;
+            background-image: linear-gradient(
+                125deg, hsl(150, 37%, 55%),hsl(191, 35%, 56%),hsl(219, 37%, 65%),hsl(276, 59%, 63%)
+            );
+            background-size: 400%;
+            animation: myanime 20s infinite;
+        }
+        @keyframes myanime{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+        @media  screen and (max-width:992px) and (min-width:768){
+            body{
+                background-color: blanchedalmond;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>welcome！</h1>
+</body>
+</html>
